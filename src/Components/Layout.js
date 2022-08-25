@@ -6,6 +6,8 @@ import About from '../Pages/About';
 import NotFound from '../Pages/NotFound';
 import Sidebar from './Sidebar';
 import ZooAnimal from '../Pages/ZooAnimal';
+import Posts from '../Pages/Posts';
+import Post from '../Pages/Post';
 
 function Layout() {
     return (
@@ -17,8 +19,10 @@ function Layout() {
                 <Routes>
                     <Route path='/' element={<Home />} />
                     <Route path='/about' element={<About />} />
+                    <Route path='/posts' element={<Posts />} />
+                    <Route path='/posts/:id' element={<Post />} />
                     <Route path='*' element={<NotFound />} />
-                    <Route path='/zooanimal' element={<ZooAnimal/>}/>
+                    <Route path='/zooanimal' element={<ZooAnimal />} />
                 </Routes>
             </div>
             <div className="lay-space"></div>
