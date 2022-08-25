@@ -15,7 +15,8 @@ img{
   right:15rem;
   height: 2rem;
   background-color: rgba(240, 248, 255, 0.784);
-  border: solid 5px aliceblue;
+  box-shadow: 0px 5px 5px 5px aliceblue inset, 0px 0px 0px 5px aliceblue;
+  /* border: solid 5px aliceblue; */
   border-top: 0;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -127,6 +128,26 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  text-decoration: none;
+}
+
+nav a{
+  text-decoration: none;
+  transition: .5s;
+
+}
+
+nav a:hover{
+  background-color: aliceblue;
+ 
+  box-shadow: 0px -35px 10px 49px aliceblue;
+  transform: scale(1.1);
+  
+  /* outline: 16px solid aliceblue;
+  outline-style: dashed;
+  transition: .5s; */
+  transition: .2s ease-out;
+
 }
 
 .about-bg{

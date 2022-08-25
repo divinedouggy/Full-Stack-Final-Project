@@ -1,4 +1,4 @@
-
+import { NavLink } from 'react-router-dom'
 
 function Sidebar() {
     return (
@@ -8,6 +8,7 @@ function Sidebar() {
             <p>item </p>
             <p>item </p>
             <p>item </p>
+            <NavLink to='/posts'>See all</NavLink>
         </div>
     )
 }

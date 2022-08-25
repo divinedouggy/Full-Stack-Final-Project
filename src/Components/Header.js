@@ -7,7 +7,8 @@ function Header() {
                 <NavLink to='/'>Home</NavLink>
                 <NavLink to='/about'>About</NavLink>
                 <NavLink to='/zooanimal'>Animal</NavLink>
-                <NavLink to='/posts'>Posts</NavLink>
+              
+                <NavLink to='/create-post'>Create Post</NavLink>
             </nav>
         </div>
     )

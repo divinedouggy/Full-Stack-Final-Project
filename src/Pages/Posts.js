@@ -8,7 +8,7 @@ function Posts() {
     const [isLoading, setIsLoading] = useState(false) 
 
     const fetchData = async () => {
-        // setIsLoading(true)
+        setIsLoading(true)
         try {
             const response = await axios(`${apiUrl}/posts`)
             setPosts(response.data.posts)

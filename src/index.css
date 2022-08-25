@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background: rgb(53,227,89);
   background: linear-gradient(155deg, rgba(53,227,89,1) 0%, rgba(0,199,131,1) 29%, rgba(0,168,151,1) 50%, rgba(0,136,149,1) 68%, rgba(0,103,126,1) 86%, rgba(47,72,88,1) 100%);
-  transition: background-image .5s ease-in-out;
+  background-attachment: fixed;
 }
 
 code {

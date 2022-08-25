@@ -1,7 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { NavLink, useNavigate, useParams } from 'react-router-dom';
-import Layout from "../Components/Layout";
 import apiUrl from "../apiConfig";
 
 function Post() {
@@ -24,16 +23,34 @@ function Post() {
         fetchData()
     })
 
+    const destroy = () => {
+        axios({
+            url: `${apiUrl}/posts/${id}`,
+            method: 'DELETE'
+        }).then(() => setDeleted(true)).catch(console.error)
+    }
+
+    useEffect(() => {
+        if(deleted) {
+            return navigate("/posts")
+        }
+    }, [deleted, navigate])
+
+    useEffect(()=>{
+        if (!post) {
+            return <p>Loading...</p>
+        }
+    }, [post])
+
 
     return (<div>
         <h1>{post.title}</h1>
-        <p>{post.name}</p>
-        <p>{post.url}</p>
+        <a href={post.url}>{post.name}</a>
         <p>{post.content}</p>
-
+        <button onClick={()=>destroy()}>Delete Post</button>
+        <NavLink to="/posts">Back to posts</NavLink>
         </div>
     )
-
 }
 
 export default Post

@@ -8,6 +8,7 @@ import Sidebar from './Sidebar';
 import ZooAnimal from '../Pages/ZooAnimal';
 import Posts from '../Pages/Posts';
 import Post from '../Pages/Post';
+import PostCreate from '../Pages/PostCreate';
 
 function Layout() {
     return (
@@ -23,6 +24,7 @@ function Layout() {
                     <Route path='/posts/:id' element={<Post />} />
                     <Route path='*' element={<NotFound />} />
                     <Route path='/zooanimal' element={<ZooAnimal />} />
+                    <Route path='/create-post' element={<PostCreate />} />
                 </Routes>
             </div>
             <div className="lay-space"></div>

@@ -13,9 +13,9 @@ function About() {
 
     return (
         <div>
-            <p>I don't like that lorem ipsum stuff so here's other random stuff instead.</p>
-            <p>This is a website about... I don't know yet.</p>
-            <p>But I want to have some text here so I can better visualize the future ahead.</p>
+            <p>YouZoo is meant to be a place to relax,</p>
+            <p>look at some animals, and post a comment or two</p>
+            <p>to let us know that you were here.</p>
         </div>
     )
 }
