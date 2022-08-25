@@ -1,14 +1,37 @@
-/* .App {
-text-align: center;
-} */
+.App {
+  font-family: 'DynaPuff', cursive;
+}
 
 .lay-header { grid-area: a; }
+
+img{
+  height: 300px;
+}
+
+ .headerbg{
+  position: absolute;
+  /* min-width: 150px; */
+  left:15rem;
+  right:15rem;
+  height: 2rem;
+  background-color: rgba(240, 248, 255, 0.784);
+  border: solid 5px aliceblue;
+  border-top: 0;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  z-index: -1;
+
+ }
 
 .lay-sidebar {
   grid-area: b;
   display: flex;
   align-items: center;
+  background-color: rgba(240, 248, 255, 0.784);
+  border: solid 5px aliceblue;
+  border-radius: 3px;
 }
+
 .lay-main {
   grid-area: c;
   display: flex;
@@ -28,11 +51,48 @@ text-align: center;
   'b b c c c'
   'd d d d d'
   'e e e e e';
-
   gap: 10px;
 }
 
+@media screen and (max-width:988px) {
 
+  .headerbg{
+    position: absolute;
+    min-width: 150px;
+    left:10rem;
+    right:10rem;
+    height: 2rem;
+    background-color: rgba(240, 248, 255, 0.784);
+   }
+}
+
+@media screen and (max-width:768px) {
+  .layout {
+    grid-template-areas: 
+    'a a a a a'
+    'b b b b b'
+    'c c c c c'
+    'd d d d d'
+    'e e e e e';
+    }
+    .lay-sidebar p{
+      display: inline;
+    }
+    .lay-sidebar{
+      display: flex;
+      justify-content: center;
+      justify-self: center;
+ 
+    }
+    .headerbg{
+      position: absolute;
+      min-width: 150px;
+      left:5rem;
+      right:5rem;
+      height: 2rem;
+      background-color: rgba(240, 248, 255, 0.784);
+     }
+}
 
 @media screen and (max-width:576px) {
   .layout {
@@ -45,19 +105,31 @@ text-align: center;
     }
     .lay-sidebar p{
       display: inline;
-
     }
+    .headerbg{
+      position: absolute;
+      min-width: 150px;
+      left:0;
+      right:0;
+      height: 2rem;
+      background-color: rgba(240, 248, 255, 0.784);
+     }
 }
 
 .layout>div {
   text-align: center;
   padding: 20px ;
   font-size: 30px;
-  border: 2px dotted;
+  /* border: 2px dotted; */
 }
 
 nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+
+.about-bg{
+  background-image: url(Images/bg2.png);
+  transition: background-image .5s ease-in-out;
 }

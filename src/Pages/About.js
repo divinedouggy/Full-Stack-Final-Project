@@ -1,10 +1,21 @@
+import { useEffect } from "react";
 
 
 function About() {
-    return(
-        <div><p>
-           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur orci eros, condimentum at cursus eu, vestibulum pulvinar tellus. Vivamus at nibh commodo, bibendum ex id, tempus lectus. Suspendisse diam nunc, tincidunt ac nisi non, fermentum fringilla augue. In ultricies purus id auctor vestibulum. Sed posuere dui et odio dapibus fermentum. Maecenas luctus ante semper pulvinar posuere. In aliquet ut sapien nec consectetur. Maecenas molestie laoreet finibus. Mauris nec efficitur sem. Mauris eu luctus lectus. Duis nec lorem tempus augue aliquet maximus ac in lectus.
-        </p>
+
+    // useEffect(()  => {
+    //     document.body.classList.add('about-bg');
+
+    //     return () => {
+    //         document.body.classList.remove('about-bg');
+    //     };
+    // });
+
+    return (
+        <div>
+            <p>I don't like that lorem ipsum stuff so here's other random stuff instead.</p>
+            <p>This is a website about... I don't know yet.</p>
+            <p>But I want to have some text here so I can better visualize the future ahead.</p>
         </div>
     )
 }
