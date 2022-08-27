@@ -35,7 +35,7 @@
   width: 100vw;
   grid-template-areas: 
   'a a a a a'
-  'b b c c c'
+  'b c c c c'
   'd d d d d'
   'e e e e e';
   gap: 10px;
@@ -60,7 +60,7 @@
   /* min-width: 150px; */
   left:15rem;
   right:15rem;
-  height: 2rem;
+  height: 1.2rem;
   background-color: rgba(240, 248, 255, 0.784);
   box-shadow: 0px 5px 5px 5px aliceblue inset, 0px 0px 0px 5px aliceblue;
   /* border: solid 5px aliceblue; */
@@ -68,10 +68,9 @@
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   z-index: -1;
-  padding: 20px;
-  top:5px
 
  }
+
 
 /* ---- Nav ---- */
 
@@ -85,9 +84,10 @@ nav {
 nav a{
   text-decoration: none;
   transition: .5s;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'DynaPuff', cursive;
   color: #551A8B;
-  font-size: 25px;
+  font-size: 22px;
+  font-weight: 700;
   /* padding: 20px ; */
 
 }
@@ -102,9 +102,9 @@ nav a:hover{
   transition: .2s ease-out;
 }
 
-nav a:visited{
+/* nav a:visited{
   color: #551A8B
-}
+} */
 
 
 
@@ -185,7 +185,9 @@ nav a:visited{
 .zoo h1{
   font-family: 'DynaPuff', cursive;
   font-size: 35px;
-  font-weight: normal;
+  font-weight: 500;
+  line-height: 30px;
+  text-shadow: 1px 1px 4px aliceblue;
 }
 
 .zoo h4{
@@ -193,28 +195,55 @@ nav a:visited{
 
   font-weight: normal;
   font-size: 22px;
-  margin-top: 0;
+  /* margin-top: 0; */
+  line-height: 0;
+  text-shadow: 0px 1px 7px aliceblue;
 }
 
 /* ---- Just the Animal subtext ---- */
+
+.animal-type{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  font-family: 'DynaPuff', cursive;
+  font-size:24px;
+  font-style: normal;
+  text-shadow: 1px 1px 5px aliceblue;
+}
 
 .animal-descr{
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   font-family: 'Oswald', sans-serif;
+  
 }
 
 .animal-descr p{
-  font-size: 23px;
+  font-size: 20px;
+  line-height:17px;
+  font-weight: 400;
+  text-shadow: 1px 1px 25px aliceblue;
+  
+}
+
+span{
+  font-weight: 200;
+  font-style: italic;
+  font-size: 22px;
+  text-shadow: 1px 1px 5px aliceblue;
 }
 
 /* ---- Animal Image, Names ---- */
 
 .animal-header img{
-  max-height: 400px;
+  max-height: 330px;
   min-width: 250px;
   max-width: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  outline: double 5px aliceblue ;
+  outline-offset: -5px;
 }
 
 /* .animal-header{
@@ -260,17 +289,23 @@ margin-top: 30px;
   align-items: center;
 }
 
+.sidebar h1{
+  font-family: 'DynaPuff', cursive;
+}
+
  .sidebar-posts p{
    display: flex;
    flex-direction: column;
    align-items: flex-start;
-   font-size:16px;
+   font-size:20px;
    margin: 5px;
    z-index: -1;
+   font-weight: 200;
  }
 
  .sidebar-posts a{
    display: flex;
+   font-family: 'Oswald', sans-serif;
 }
 
 .side-posts-height{
@@ -280,16 +315,17 @@ margin-top: 30px;
 
 .by{
   font-size: 20px;
+  font-family: 'Oswald', sans-serif;
 }
 
 .go-to-posts{
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: -70px;
-  font-family: 'Oswald', sans-serif;
+  margin-top: -65px;
+  font-family: 'DynaPuff', cursive;
   font-size: 24px;
-  text-shadow: 1px 1px 2px, -2px -2px 2px aliceblue;
+  text-shadow: 1px 1px 2px;
   border-radius: 5px;
   background: rgb(240,248,255);
   background: linear-gradient(180deg, rgba(240,248,255,0.3) 0%,rgba(240,248,255,0.7) 10%, rgba(240,248,255,1) 40%);
@@ -307,6 +343,7 @@ margin-top: 30px;
   font-size: 15px;
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
+  line-height: 0;
 }
 
 
@@ -316,3 +353,9 @@ margin-top: 30px;
   font-weight: 200;
   font-style: italic;
 }
+
+.post{
+  display: flex;
+  flex-direction: column;
+}
+

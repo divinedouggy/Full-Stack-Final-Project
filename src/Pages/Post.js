@@ -3,10 +3,10 @@ import { useEffect, useState } from "react";
 import { NavLink, useNavigate, useParams } from 'react-router-dom';
 import apiUrl from "../apiConfig";
 
+
 function Post() {
     const [post, setPost] = useState([])
     const [deleted, setDeleted] = useState(false)
-
     const { id } = useParams();
     let navigate = useNavigate();
 
@@ -42,11 +42,11 @@ function Post() {
         }
     }, [post])
 
-
-    return (<div>
+    return (<div className="post">
         <h1>{post.title}</h1>
-        <a href={post.url}>{post.name}</a>
+        <p>by <a href={post.url}>{post.name}</a></p>
         <p>{post.content}</p>
+        {/* <img scr={trashcan} alt="Delete Post" /> */}
         <button onClick={() => destroy()}>Delete Post</button>
 
         <NavLink to={`/posts/${id}/edit`} >

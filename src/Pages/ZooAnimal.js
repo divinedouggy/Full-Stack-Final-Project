@@ -11,13 +11,13 @@ function ZooAnimal() {
         setAnimal(<div className="zoo">
 
             <div className="animal-descr">
-                <p><b>{result.data.animal_type}</b></p>
-                <p>Active at: {result.data.active_time === "Diurnal" ? "Day" : "Night"}</p>
-                <p>Lives in: {result.data.habitat}</p>
-                <p>In these regions: {result.data.geo_range}</p>
-                <p>Eats: {result.data.diet}</p>
-                <p>Can weigh up to: {result.data.weight_max} lbs</p>
-                <p>Lifespan: {result.data.lifespan} years</p>
+                <p><span className="animal-type"><b>{result.data.animal_type}</b></span></p>
+                <p><span>Active at</span> :&nbsp; {result.data.active_time === "Diurnal" ? "Day" : "Night"}</p>
+                <p><span>Lives in</span> :&nbsp; {result.data.habitat}</p>
+                <p><span>In these regions</span> :&nbsp; {result.data.geo_range}</p>
+                <p><span>Eats</span> :&nbsp; {result.data.diet}</p>
+                <p><span>Can weigh up to</span> :&nbsp; {result.data.weight_max} lbs</p>
+                <p><span>Lifespan</span> :&nbsp; {result.data.lifespan} years</p>
             </div>
             <div className="animal-divider"></div>
 
