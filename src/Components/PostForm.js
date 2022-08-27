@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const PostForm = ({ post, handleSubmit, handleChange, cancelPath }) => {
     return (
         <form onSubmit={(e) => handleSubmit(e)}>
-            <label>Title</label>
+         
             <input
                 placeholder="post title"
                 defaultValue={post.title}

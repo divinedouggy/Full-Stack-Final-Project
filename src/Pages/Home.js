@@ -2,9 +2,10 @@
 
 function Home() {
     return (
-        <div>
-            <p> Welcome home. You are the one I've been waiting for.</p>
-            <p>No... you're not the one.</p>
+        <div className="home">
+            <p> Welcome to YouZoo!</p>
+            <p> This is place where you can look at all kinds of animals</p>
+            <p> Also you can...</p>
         </div>
     )
 }

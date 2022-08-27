@@ -7,10 +7,10 @@ function Post() {
     const [post, setPost] = useState([])
     const [deleted, setDeleted] = useState(false)
 
-    const {id} = useParams();
+    const { id } = useParams();
     let navigate = useNavigate();
 
-    useEffect(()=>{
+    useEffect(() => {
         const fetchData = async () => {
             try {
                 const response = await axios(`${apiUrl}/posts/${id}`)
@@ -21,7 +21,7 @@ function Post() {
             }
         }
         fetchData()
-    })
+    }, [id])
 
     const destroy = () => {
         axios({
@@ -31,12 +31,12 @@ function Post() {
     }
 
     useEffect(() => {
-        if(deleted) {
-            return navigate("/posts")
+        if (deleted) {
+            return navigate("/posts-all")
         }
     }, [deleted, navigate])
 
-    useEffect(()=>{
+    useEffect(() => {
         if (!post) {
             return <p>Loading...</p>
         }
@@ -47,9 +47,14 @@ function Post() {
         <h1>{post.title}</h1>
         <a href={post.url}>{post.name}</a>
         <p>{post.content}</p>
-        <button onClick={()=>destroy()}>Delete Post</button>
-        <NavLink to="/posts">Back to posts</NavLink>
-        </div>
+        <button onClick={() => destroy()}>Delete Post</button>
+
+        <NavLink to={`/posts/${id}/edit`} >
+            <button>Edit Post</button>
+        </NavLink>
+
+        <NavLink to="/posts-all">Back to posts</NavLink>
+    </div>
     )
 }
 

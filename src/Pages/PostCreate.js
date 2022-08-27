@@ -33,12 +33,13 @@ function PostCreate() {
 
     useEffect(()=>{
         if (createdPost) {
-            return navigate('/posts')
+            return navigate('/posts-all')
         }
     }, [createdPost, navigate])
 
     return(
         <div>
+            Create Post:
             <PostForm
             post={post}
             handleChange={(e) => handleChange(e)}

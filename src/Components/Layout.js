@@ -9,6 +9,8 @@ import ZooAnimal from '../Pages/ZooAnimal';
 import Posts from '../Pages/Posts';
 import Post from '../Pages/Post';
 import PostCreate from '../Pages/PostCreate';
+import PostsExpanded from '../Pages/PostsExpanded';
+import PostEdit from '../Routes/PostEdit';
 
 function Layout() {
     return (
@@ -20,11 +22,13 @@ function Layout() {
                 <Routes>
                     <Route path='/' element={<Home />} />
                     <Route path='/about' element={<About />} />
-                    <Route path='/posts' element={<Posts />} />
+                    {/* <Route path='/posts' element={<Posts />} /> */}
                     <Route path='/posts/:id' element={<Post />} />
+                    <Route path='/posts-all' element={<PostsExpanded />} />
                     <Route path='*' element={<NotFound />} />
                     <Route path='/zooanimal' element={<ZooAnimal />} />
                     <Route path='/create-post' element={<PostCreate />} />
+                    <Route path='/posts/:id/edit' element={<PostEdit />} />
                 </Routes>
             </div>
             <div className="lay-space"></div>

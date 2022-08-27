@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 import axios from "axios";
 import apiUrl from "../apiConfig";
 
-function Posts() {
+function PostsExpanded() {
     const [posts, setPosts] = useState([])
     const [isLoading, setIsLoading] = useState(false)
 
@@ -23,26 +23,25 @@ function Posts() {
     }, [])
 
     const postsData = posts.map((post) => {
-        return <div className="sidebar-posts" key={post.id}>
-            <NavLink to={`/posts/${post._id}`}>
-                <p>{post.title}</p>
-            </NavLink>
-            <div className="by"><p>by {post.name}</p></div>
+        return <div key={post.id}>
+            <NavLink to={`/posts/${post._id}`}><p>{post.title}</p></NavLink>
+            <a href={post.url}>{post.name}</a>
+            <p>"{post.content}"</p>
         </div>
     })
 
     return (
-        <div className="sidebar" >
+        <div>
             <h1>Posts</h1>
-            <div className="side-posts-height">
             <ul>
                 {postsData}
             </ul>
-            </div>
-            <div className="go-to-posts"><NavLink to='/posts-all'>Go to Posts</NavLink></div>
+            <NavLink to={'/create-post'} >
+                <button>New Post</button>
+            </NavLink>
             {isLoading ? <p>Loading...</p> : <></>}
         </div>
     )
 }
 
-export default Posts
+export default PostsExpanded

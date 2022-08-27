@@ -1,14 +1,12 @@
 import { NavLink } from 'react-router-dom'
+import Posts from '../Pages/Posts'
+
 
 function Sidebar() {
     return (
-        <div>
-            <p>item </p>
-            <p>item </p>
-            <p>item </p>
-            <p>item </p>
-            <p>item </p>
-            <NavLink to='/posts'>See all</NavLink>
+        <div className="sidebar" >
+            <Posts></Posts>
+          
         </div>
     )
 }
