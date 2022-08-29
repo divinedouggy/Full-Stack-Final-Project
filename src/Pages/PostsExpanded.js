@@ -23,22 +23,23 @@ function PostsExpanded() {
     }, [])
 
     const postsData = posts.map((post) => {
-        return <div key={post.id}>
+        return <div className="posts" key={post.id}>
             <NavLink to={`/posts/${post._id}`}><p>{post.title}</p></NavLink>
-            <a href={post.url}>{post.name}</a>
-            <p>"{post.content}"</p>
+            <p>Posted by <a href={post.url} target="_blank">{post.name}</a></p>
+            <p><i>"{post.content}"</i></p>
         </div>
     })
 
     return (
-        <div>
-            <h1>Posts</h1>
-            <ul>
+        <div className="all-posts">
+            <h1>All Posts</h1>
+            <div className="new-post"><NavLink to={'/create-post'} >
+                <h2>New Post</h2>
+            </NavLink></div>
+            <div>
                 {postsData}
-            </ul>
-            <NavLink to={'/create-post'} >
-                <button>New Post</button>
-            </NavLink>
+            </div>
+
             {isLoading ? <p>Loading...</p> : <></>}
         </div>
     )

@@ -2,38 +2,42 @@ import { Link } from 'react-router-dom';
 
 const PostForm = ({ post, handleSubmit, handleChange, cancelPath }) => {
     return (
+        <div>
         <form onSubmit={(e) => handleSubmit(e)}>
          
             <input
-                placeholder="post title"
+                placeholder="Subject"
                 defaultValue={post.title}
                 name="title"
                 onChange={(e) => handleChange(e)} />
 
             <input
-                placeholder="your name"
+                placeholder="Your Name"
                 defaultValue={post.name}
                 name="name"
                 onChange={(e) => handleChange(e)} />
 
             <input
-                placeholder="your website"
+                placeholder="Website (not required)"
                 defaultValue={post.url}
                 name="url"
                 onChange={(e) => handleChange(e)} />
 
             <input
-                placeholder="write a comment"
+                placeholder="Comment"
                 defaultValue={post.content}
                 name="content"
                 onChange={(e) => handleChange(e)} />
 
+                <div className='post-form-buttons'>
             <button type="submit">Submit</button>
 
             <Link to={cancelPath}>
                 <button>Cancel</button>
             </Link>
+            </div>
         </form>
+        </div>
     )
 }
 

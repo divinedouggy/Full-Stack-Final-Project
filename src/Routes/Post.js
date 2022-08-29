@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { NavLink, useNavigate, useParams } from 'react-router-dom';
 import apiUrl from "../apiConfig";
 
-
 function Post() {
     const [post, setPost] = useState([])
     const [deleted, setDeleted] = useState(false)
@@ -44,15 +43,15 @@ function Post() {
 
     return (<div className="post">
         <h1>{post.title}</h1>
-        <p>by <a href={post.url}>{post.name}</a></p>
+        <p>by <a href={post.url} target="_blank">{post.name}</a></p>
         <p>{post.content}</p>
-        {/* <img scr={trashcan} alt="Delete Post" /> */}
-        <button onClick={() => destroy()}>Delete Post</button>
+        <div>
+            <img className="trash" src={require("../Images/trashicon.png")} alt="Delete Post" onClick={() => destroy()} />
 
-        <NavLink to={`/posts/${id}/edit`} >
-            <button>Edit Post</button>
-        </NavLink>
-
+            <NavLink to={`/posts/${id}/edit`} >
+                <img className="edit" src={require("../Images/editicon.png")} />
+            </NavLink>
+        </div>
         <NavLink to="/posts-all">Back to posts</NavLink>
     </div>
     )

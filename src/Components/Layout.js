@@ -3,12 +3,11 @@ import Header from './Header';
 import Footer from './Footer';
 import Home from '../Pages/Home';
 import About from '../Pages/About';
-import NotFound from '../Pages/NotFound';
+import NotFound from '../Routes/NotFound';
 import Sidebar from './Sidebar';
 import ZooAnimal from '../Pages/ZooAnimal';
-import Posts from '../Pages/Posts';
-import Post from '../Pages/Post';
-import PostCreate from '../Pages/PostCreate';
+import Post from '../Routes/Post';
+import PostCreate from '../Routes/PostCreate';
 import PostsExpanded from '../Pages/PostsExpanded';
 import PostEdit from '../Routes/PostEdit';
 

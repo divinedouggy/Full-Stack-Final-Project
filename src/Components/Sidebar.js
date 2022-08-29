@@ -1,12 +1,10 @@
-import { NavLink } from 'react-router-dom'
-import Posts from '../Pages/Posts'
 
+import Posts from './Posts'
 
 function Sidebar() {
     return (
         <div className="sidebar" >
             <Posts></Posts>
-          
         </div>
     )
 }

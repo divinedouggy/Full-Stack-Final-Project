@@ -38,13 +38,13 @@ function PostCreate() {
     }, [createdPost, navigate])
 
     return(
-        <div>
-            Create Post:
+        <div className="create-post">
+            <p>Write Your Post:</p>
             <PostForm
             post={post}
             handleChange={(e) => handleChange(e)}
             handleSubmit={(e) => handleSubmit(e)}
-            cancelPath='/'
+            cancelPath='/posts-all'
             />
         </div>
     )
