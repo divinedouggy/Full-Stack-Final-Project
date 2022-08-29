@@ -77,7 +77,6 @@
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
   z-index: -1;
-
 }
 
 
@@ -87,7 +86,6 @@ nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-
 }
 
 nav a {
@@ -99,7 +97,6 @@ nav a {
   font-size: 22px;
   font-weight: 500;
   /* padding: 20px ; */
-
 }
 
 nav a:hover {
@@ -116,16 +113,21 @@ nav a:hover {
   color: #551A8B
 } */
 
-
-
-
 /* ---- Media Queries ---- */
+
+/* -- Laptop -- */
 
 @media screen and (max-width:1024px) {
 
   .headerbg {
     left: 10rem;
     right: 10rem;
+  }
+
+  nav a:hover {
+    background-color: aliceblue;
+    box-shadow: 0px -25px 5px 40px aliceblue;
+    transform: scale(1);
   }
 
   .home {
@@ -149,6 +151,8 @@ nav a:hover {
    }
 } */
 
+/* -- Tablet -- */
+
 @media screen and (max-width:768px) {
   .layout {
     grid-template-areas:
@@ -159,14 +163,32 @@ nav a:hover {
       'e e e e e';
   }
 
-  .sidebar {
-    margin-top: 25px;
+  .headerbg {
+    position: absolute;
+    min-width: 150px;
+    left: 5rem;
+    right: 5rem;
+    height: 1rem;
+    background-color: rgba(240, 248, 255, 0.784);
+  }
+
+  nav a:hover {
+    background-color: aliceblue;
+    box-shadow: 0px -25px 5px 38px aliceblue;
+    transform: scale(1);
   }
 
   .lay-sidebar {
     width: 200px;
     justify-self: center;
     height: 40px;
+    border-radius: 40px;
+    border: none;
+    background: none;
+  }
+
+  .sidebar {
+    margin-top: 25px;
   }
 
   .sidebar-posts {
@@ -182,41 +204,133 @@ nav a:hover {
     display: none;
   }
 
+  .go-to-posts {
+    border-radius: 40px !important;
+    background: rgb(240, 248, 255) !important;
+    background: radial-gradient(circle, rgba(240, 248, 255, 1) 24%, rgba(240, 248, 255, 0.2) 33%, rgba(240, 248, 255, 0) 37%) !important;
+    height: 95px !important;
 
+  }
 
+  .go-to-posts a {
+    font-size: 20px;
+  }
 
-  .headerbg {
-    position: absolute;
-    min-width: 150px;
-    left: 5rem;
-    right: 5rem;
-    height: 2rem;
-    background-color: rgba(240, 248, 255, 0.784);
+  .animal-header img {
+    max-width: 375px !important;
+  }
+
+  .animal-descr p{
+    line-height: 22px !important;
   }
 }
 
-@media screen and (max-width:576px) {
-  .layout {
-    grid-template-areas:
-      'a a a a a'
-      'b b b b b'
-      'c c c c c'
-      'd d d d d'
-      'e e e e e';
-  }
+/* -- Phone (Large) -- */
 
-  .lay-sidebar p {
-    display: inline;
-  }
+@media screen and (max-width:426px) {
+
+
 
   .headerbg {
     position: absolute;
     min-width: 150px;
-    left: 0;
-    right: 0;
+    left: 1rem;
+    right: 1rem;
     height: 2rem;
     background-color: rgba(240, 248, 255, 0.784);
   }
+
+  nav a:hover {
+    background-color: aliceblue;
+    box-shadow: 0px -9px 4px 36px aliceblue;
+    transform: scale(1);
+  }
+
+  .zoo {
+    flex-direction: column-reverse !important;
+
+  }
+
+  .animal-descr {
+    align-items: center !important;
+   
+  }
+
+  .posts{
+    width: 22em !important;
+  }
+
+  .home h1{
+    font-size: 75px !important;
+  }
+
+}
+
+/* -- Phone (Medium) -- */
+
+@media screen and (max-width:376px) {
+
+  .headerbg{
+    height: 1.5rem;
+  }
+
+  nav a{
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  nav a:hover {
+    background-color: aliceblue;
+    box-shadow: 0px 4px 5px 20px aliceblue;
+    transform: scale(1);
+  }
+
+  .animal-header img {
+    max-width: 325px !important;
+  }
+
+  .posts{
+    width: 20em !important;
+  }
+
+    .home h1{
+    font-size: 70px !important;
+  }
+
+}
+
+/* -- Phone (Small) -- */
+
+@media screen and (max-width:321px) {
+
+  nav a:hover {
+    background-color: aliceblue;
+    box-shadow: 0px 3px 5px 18px aliceblue;
+    transform: scale(1);
+  }
+
+  .animal-header img {
+    max-width: 280px !important;
+  }
+
+  .animal-descr p{
+    line-height: 24px !important;
+  }
+
+  .posts{
+    width: 16.5em !important;
+  }
+
+  .home h1{
+    font-size: 55px !important;
+  }
+
+  input {
+    margin: 5px;
+    height: 1.5em;
+    font-size: 20px !important;
+  }
+
 }
 
 
@@ -238,7 +352,6 @@ nav a:hover {
 
 .zoo h4 {
   font-family: 'Oswald', sans-serif;
-
   font-weight: normal;
   font-size: 22px;
   /* margin-top: 0; */
@@ -294,12 +407,7 @@ nav a:hover {
 
 }
 
-.glow {
-  font-style: unset;
-  font-weight: 500;
-  font-size: unset;
-  text-shadow: 1px 1px 3px aliceblue;
-}
+
 
 span {
   font-weight: 200;
@@ -352,7 +460,7 @@ margin-top: 30px;
 
 .home p {
   font-family: 'Oswald', sans-serif;
-  font-weight: 300;
+  font-weight: 200;
   font-size: 21px;
 
 }
@@ -360,10 +468,17 @@ margin-top: 30px;
 /* ---- About ---- */
 
 .about p {
-  font-size: 25px;
+  font-size: 27px;
   font-family: 'Oswald', sans-serif;
-  font-weight: 300;
+  font-weight: 200;
   margin-left: -10em;
+}
+
+.glow {
+  font-style: unset;
+  font-weight: 300;
+  font-size: unset;
+  text-shadow: 1px 1px 3px aliceblue;
 }
 
 /* ---- Possible Background Change Between Pages ---- */
@@ -536,7 +651,6 @@ margin-top: 30px;
 .posts {
   display: flex;
   flex-direction: column;
-
   padding: 10px;
   font-family: 'Oswald', sans-serif;
   border: 1px solid;
@@ -566,7 +680,6 @@ form {
 
 input {
   margin: 5px;
-  width: fit-content;
   height: 1.5em;
   font-size: 25px;
 }
