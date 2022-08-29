@@ -87,9 +87,10 @@ nav a{
   text-decoration: none;
   transition: .5s;
   font-family: 'DynaPuff', cursive;
-  color: #551A8B;
+  color: #3C608F;
+  text-shadow: 3px 2px 2px aliceblue;
   font-size: 22px;
-  font-weight: 700;
+  font-weight: 500;
   /* padding: 20px ; */
 
 }
@@ -283,10 +284,11 @@ margin-top: 30px;
 
 /* ---- Home ---- */
 
-.home p{
-  font-size: 25px;
+.home h1{
+  font-size: 77px;
   font-family: 'Oswald', sans-serif;
   font-weight: 300;
+  text-shadow: 2px 2px 3px aliceblue;
 }
 
 /* ---- About ---- */
@@ -359,6 +361,9 @@ margin-top: 30px;
 
 .go-to-posts a{
   text-decoration: none;
+  font-family: 'DynaPuff', cursive;
+  color: #3C608F;
+  
 }
 
 /* ---- Footer ---- */
@@ -449,6 +454,7 @@ font-weight: 300;
 .new-post a{
   text-decoration: none;
   font-size: 8px;
+  
 }
 
 .all-posts p{
