@@ -41,6 +41,19 @@ function Post() {
         }
     }, [post])
 
+    useEffect(() => {
+        const sidebar = document.querySelector('.lay-sidebar ')
+        sidebar.style.display = "none"
+        const layout = document.querySelector('.layout')
+        layout.style.display = "flex"
+        layout.style.flexDirection = "column"
+   
+        return () => {
+            sidebar.style.display = "block"
+            layout.style.display = "grid"
+        };
+    });
+
     return (<div className="post">
         <h1>{post.title}</h1>
         <p>by <a href={post.url} target="_blank">{post.name}</a></p>

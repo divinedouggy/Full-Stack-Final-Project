@@ -30,6 +30,21 @@ function PostsExpanded() {
         </div>
     })
 
+
+
+    useEffect(() => {
+        const sidebar = document.querySelector('.lay-sidebar ')
+        sidebar.style.display = "none"
+        const layout = document.querySelector('.layout')
+        layout.style.display = "flex"
+        layout.style.flexDirection = "column"
+   
+        return () => {
+            sidebar.style.display = "block"
+            layout.style.display = "grid"
+        };
+    });
+
     return (
         <div className="all-posts">
             <h1>All Posts</h1>

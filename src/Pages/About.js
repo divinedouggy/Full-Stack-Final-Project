@@ -13,9 +13,10 @@ function About() {
 
     return (
         <div className="about">
-            <p>YouZoo is meant to be a place to relax,</p>
-            <p>look at some animals, and also:</p>
-            <p>post a comment or two to let us know that you are here!</p>
+            <p>YouZoo was created for animal lovers to unite over one common cause: well, animals.</p>
+            <p>So, do it. Look at some animals. <span className="glow">You know you want to.</span></p>
+            <p>Go on; they don't bite. There's no cages to stick your fingers through here.</p>
+            <p>And - post a comment to let us know you were here!</p>
      
         </div>
     )
