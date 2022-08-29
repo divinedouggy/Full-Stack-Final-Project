@@ -18,6 +18,7 @@ function ZooAnimal() {
                 <p><span>Eats</span> :&nbsp; {result.data.diet}</p>
                 <p><span>Can weigh up to</span> :&nbsp; {result.data.weight_max} lbs</p>
                 <p><span>Lifespan</span> :&nbsp; {result.data.lifespan} years</p>
+                <h2 onClick={fetchData}>Next Exhibit&nbsp;&nbsp;&nbsp;</h2>
             </div>
             <div className="animal-divider"></div>
 
