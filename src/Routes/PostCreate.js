@@ -52,7 +52,7 @@ function PostCreate() {
 
     return(
         <div className="create-post">
-            <p>Write a new post:</p>
+            <p>Create post:</p>
             <PostForm
             post={post}
             handleChange={(e) => handleChange(e)}

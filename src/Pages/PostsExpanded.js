@@ -25,7 +25,7 @@ function PostsExpanded() {
     const postsData = posts.map((post) => {
         return <div className="posts" key={post.id}>
             <NavLink to={`/posts/${post._id}`}><p>{post.title}</p></NavLink>
-            <p>Posted by <a href={post.url} target="_blank">{post.name}</a></p>
+            <p>Posted by <a href={post.url} target="_blank" rel="noreferrer">{post.name}</a></p>
             <p><i>"{post.content}"</i></p>
         </div>
     })

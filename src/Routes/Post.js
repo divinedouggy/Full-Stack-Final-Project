@@ -56,13 +56,13 @@ function Post() {
 
     return (<div className="post">
         <h1>{post.title}</h1>
-        <p>by <a href={post.url} target="_blank">{post.name}</a></p>
+        <p>by <a href={post.url} target="_blank" rel="noreferrer">{post.name}</a></p>
         <p>{post.content}</p>
         <div>
             <img className="trash" src={require("../Images/trashicon.png")} alt="Delete Post" onClick={() => destroy()} />
 
             <NavLink to={`/posts/${id}/edit`} >
-                <img className="edit" src={require("../Images/editicon.png")} />
+                <img className="edit" src={require("../Images/editicon.png")} alt="Edit Post" />
             </NavLink>
         </div>
         <NavLink to="/posts-all">Back to posts</NavLink>

@@ -63,7 +63,7 @@ function PostEdit() {
 
     return (
         <div className="edit-post">
-            <p>Type only in the fields you wish to change</p>
+            <p>Edit post:</p><h4>Type only in the fields you wish to change</h4>
             <PostForm
                 post={post}
                 handleChange={(e) => handleChange(e)}
