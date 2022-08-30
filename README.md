@@ -60,6 +60,7 @@ This API was created by myself for the sole purpose of providing the Post databa
 - Delete Post
 
 ## Wireframes
+
 <p align="center">
   <img src="./src/Images/phone.jpg" alt="Phone" />
   <img src="./src/Images/tablet.jpg" alt="Tablet" />
@@ -68,10 +69,18 @@ This API was created by myself for the sole purpose of providing the Post databa
   <img src="./src/Images/desktop.jpg" alt="Desktop" />
 </p>
 
-<!-- ![Phone](./src/Images/phone.jpg)
-![Tablet](./src/Images/tablet.jpg)
-![Desktop](./src/Images/desktop.jpg) -->
-
 ## Component Hierarchy
 
-![Component Hierarchy](./src/Images/ch2.jpg)
+![Component Hierarchy](./src/Images/ch.jpg)
+
+## List Of Dependencies
+
+- axios
+- cors
+- create-react-app
+- dotenv
+- express
+- mongoose
+- morgan
+- nodemon
+- react-router-dom
