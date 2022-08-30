@@ -1,6 +1,8 @@
 # YouZoo
 
-![YouZoo logo](./src/Images/youzoo.png)
+<p align="center">
+  <img src="./src/Images/youzoo.png" alt="YouZoo logo" />
+</p>
 
 ## Description
 
