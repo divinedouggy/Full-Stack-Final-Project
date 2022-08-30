@@ -37,7 +37,7 @@ In the future, users should be able to leave comments on the specific animals. A
 
 <b><a href="https://zoo-animal-api.herokuapp.com">Zoo Animal API</a></b>
 
-##### This API was used to pull a random animal image and information
+#### This API was used to pull a random animal image and information
 
 *Endpoints Used*\
 <br>
@@ -46,7 +46,7 @@ In the future, users should be able to leave comments on the specific animals. A
 
 <b><a href="https://youzoo-posts.herokuapp.com/api">YouZoo Posts API</a></b>
 
-##### This API was created by myself for the sole purpose of providing the Post database and functions
+#### This API was created by myself for the sole purpose of providing the Post database and functions
 
 *Endpoints Used*\
 <br>
