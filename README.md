@@ -1,5 +1,5 @@
 # Per Scholas Capstone Project
-\
+<br>
 <p align="center">
   <img src="./src/Images/youzoo.png" alt="YouZoo logo" />
 </p>
