@@ -40,6 +40,7 @@ In the future, users should be able to leave comments on the specific animals. A
 ##### This API was used to pull a random animal image and information
 
 *Endpoints Used*\
+<br>
 `/animals/rand`  
 - Returns a single random animal
 
@@ -48,6 +49,7 @@ In the future, users should be able to leave comments on the specific animals. A
 ##### This API was created by myself for the sole purpose of providing the Post database and functions
 
 *Endpoints Used*\
+<br>
 `/posts`
 - Get All Posts
 - Create Post
