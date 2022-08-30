@@ -2,6 +2,8 @@
   <img src="./src/Images/youzoo.png" alt="YouZoo logo" />
 </p>
 
+View the application live [here](https://youzoo.netlify.app/)
+
 ## Description
 
 YouZoo was designed with relaxing in mind. The goal is for the user to have a pleasant, cerebral experience at a virtual zoo, with the ability to write posts.
