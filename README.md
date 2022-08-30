@@ -1,5 +1,3 @@
-# YouZoo
-
 <p align="center">
   <img src="./src/Images/youzoo.png" alt="YouZoo logo" />
 </p>
