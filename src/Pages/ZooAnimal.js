@@ -8,6 +8,7 @@ function ZooAnimal() {
 
     const fetchData = async () => {
         const result = await axios.get('https://zoo-animal-api.herokuapp.com/animals/rand')
+        setAnimal('')
         setAnimal(<div className="zoo">
 
             <div className="animal-descr">
