@@ -20,10 +20,18 @@ Users should be able to get a random animal with a button click, and be able to 
 
 In the future, users should be able to leave comments on the specific animals. Also, users should be able to authenticate themselves so that when an individual posts a comment, only they can edit or delete it.
 
-### Feature List
+## Features
 
 - Zoo Animal
+  - Get a random zoo animal image and information, such as habitat
 - Next Exhibit
+  - Returns a new animal
 - Create Post
+  - Leave a comment in the Posts section
 - Edit Post
 - Delete Post
+
+## APIs
+
+[Zoo Animal API](https://zoo-animal-api.herokuapp.com/)
+[YouZoo Posts API](https://youzoo-posts.herokuapp.com/api)
