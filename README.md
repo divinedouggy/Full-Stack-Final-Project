@@ -24,14 +24,16 @@ In the future, users should be able to leave comments on the specific animals. A
 
 - Zoo Animal
   - Get a random zoo animal image and information, such as habitat
-- Next Exhibit
+- Next Exhibit button
   - Returns a new animal
 - Create Post
   - Leave a comment in the Posts section
 - Edit Post
+  - Revise your post
 - Delete Post
+  - Terminate your post forever
 
 ## APIs
 
-[Zoo Animal API](https://zoo-animal-api.herokuapp.com/)
+[Zoo Animal API](https://zoo-animal-api.herokuapp.com/) \
 [YouZoo Posts API](https://youzoo-posts.herokuapp.com/api)
