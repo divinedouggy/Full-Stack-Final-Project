@@ -75,12 +75,12 @@ This API was created by myself for the sole purpose of providing the Post databa
 
 ## List Of Dependencies
 
-- ###### axios
-- ###### cors
-- ###### create-react-app
-- ###### dotenv
-- ###### express
-- ###### mongoose
-- ###### morgan
-- ###### nodemon
-- ###### react-router-dom
+- ##### axios
+- ##### cors
+- ##### dotenv
+- ##### express
+- ##### mongoose
+- ##### morgan
+- ##### nodemon
+- ##### react
+- ##### react-router
