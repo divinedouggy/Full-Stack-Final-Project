@@ -64,3 +64,7 @@ This API was created by myself for the sole purpose of providing the Post databa
 ![Phone](./src/Images/phone.jpg)
 ![Tablet](./src/Images/tablet.jpg)
 ![Desktop](./src/Images/desktop.jpg)
+
+## Component Hierarchy
+
+![Component Hierarchy](./src/Images/ch.jpg)
