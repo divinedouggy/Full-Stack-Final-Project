@@ -35,7 +35,7 @@ In the future, users should be able to leave comments on the specific animals. A
 
 ## APIs
 
-<b><a href="https://zoo-animal-api.herokuapp.com">Zoo Animal API</a></b>
+### <b><a href="https://zoo-animal-api.herokuapp.com">Zoo Animal API</a></b>
 
 #### This API was used to pull a random animal image and information
 
@@ -44,7 +44,7 @@ In the future, users should be able to leave comments on the specific animals. A
 `/animals/rand`  
 - Returns a single random animal
 
-<b><a href="https://youzoo-posts.herokuapp.com/api">YouZoo Posts API</a></b>
+### <b><a href="https://youzoo-posts.herokuapp.com/api">YouZoo Posts API</a></b>
 
 #### This API was created by myself for the sole purpose of providing the Post database and functions
 
