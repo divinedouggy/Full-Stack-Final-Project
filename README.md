@@ -3,7 +3,7 @@
 <p align="center">
   <img src="./src/Images/youzoo.png" alt="YouZoo logo" />
 </p>
-<br> \
+
 View the application live [here](https://youzoo.netlify.app/)
 
 ## Description
