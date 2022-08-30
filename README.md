@@ -1,3 +1,5 @@
+# Per Scholas Capstone Project
+
 <p align="center">
   <img src="./src/Images/youzoo.png" alt="YouZoo logo" />
 </p>
@@ -8,7 +10,7 @@ YouZoo was designed with relaxing in mind. The goal is for the user to have a pl
 
 ### MVP
 
-Users should be able to get a random animal with a button click, and be able to post/leave comments on the website. Users can post, edit, and delete comments. The website should be pleasing to look at.
+Users should be able to get a random animal with a button click, and be able to post/leave comments on the website. Users can read, post, edit, and delete comments. The website should be pleasing to look at.
 
 ### POST-MVP
 
