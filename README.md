@@ -60,10 +60,17 @@ This API was created by myself for the sole purpose of providing the Post databa
 - Delete Post
 
 ## Wireframes
+<p align="center">
+  <img src="./src/Images/phone.jpg" alt="Phone" />
+  <img src="./src/Images/tablet.jpg" alt="Tablet" />
+</p>
+<p align="center">
+  <img src="./src/Images/desktop.jpg" alt="Desktop" />
+</p>
 
-![Phone](./src/Images/phone.jpg)
+<!-- ![Phone](./src/Images/phone.jpg)
 ![Tablet](./src/Images/tablet.jpg)
-![Desktop](./src/Images/desktop.jpg)
+![Desktop](./src/Images/desktop.jpg) -->
 
 ## Component Hierarchy
 
