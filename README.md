@@ -61,4 +61,6 @@ This API was created by myself for the sole purpose of providing the Post databa
 
 ## Wireframes
 
-![Phone](./src/Images/phone.jpg) ![Tablet](./src/Images/tablet.jpg) ![Desktop](./src/Images/desktop.jpg)
+![Phone](./src/Images/phone.jpg)
+![Tablet](./src/Images/tablet.jpg)
+![Desktop](./src/Images/desktop.jpg)
