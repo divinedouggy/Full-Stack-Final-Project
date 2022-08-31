@@ -683,3 +683,14 @@ input {
   height: 1.5em;
   font-size: 25px;
 }
+
+
+
+.not-found h1{
+  font-family: 'DynaPuff', cursive;
+}
+
+.not-found p{
+  font-family: 'Oswald', sans-serif;
+  font-size: 22px;
+}
