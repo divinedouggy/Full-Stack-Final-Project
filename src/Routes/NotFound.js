@@ -1,4 +1,3 @@
-import image from '../Images/facepalm-gorilla.jpg'
 import bunny from '../Images/facepalm-bunny.png'
 
 function NotFound() {
